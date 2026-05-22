@@ -10,6 +10,19 @@ cask "thunder" do
 
   app "Thunder.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Thunder.app"],
+                   sudo: false
+  end
+
+  caveats <<~EOS
+    #{token} requires Full Disk Access to manage files and directories.
+    To grant this permission, go to:
+      System Settings > Privacy & Security > Full Disk Access
+    and enable #{token}.
+  EOS
+
   zap trash: [
     "~/Library/Application Support/Thunder",
     "~/Library/Caches/com.example.thunder",
