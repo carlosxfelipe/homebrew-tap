@@ -8,6 +8,8 @@ cask "thunder" do
   desc "File manager written in Swift with SwiftUI"
   homepage "https://github.com/carlosxfelipe/thunder"
 
+  depends_on :macos
+
   app "Thunder.app"
 
   postflight do
