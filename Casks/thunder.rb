@@ -18,17 +18,17 @@ cask "thunder" do
                    sudo: false
   end
 
-  caveats <<~EOS
-    #{token} requires Full Disk Access to manage files and directories.
-    To grant this permission, go to:
-      System Settings > Privacy & Security > Full Disk Access
-    and enable #{token}.
-  EOS
-
   zap trash: [
     "~/Library/Application Support/Thunder",
     "~/Library/Caches/com.example.thunder",
     "~/Library/Preferences/com.example.thunder.plist",
     "~/Library/Saved Application State/com.example.thunder.savedState",
   ]
+
+  caveats <<~EOS
+    #{token} requires Full Disk Access to manage files and directories.
+    To grant this permission, go to:
+      System Settings > Privacy & Security > Full Disk Access
+    and enable #{token}.
+  EOS
 end
