@@ -7,7 +7,7 @@ cask "mov2gif" do
   desc "Native macOS application to convert .mov videos into .gif animated images"
   homepage "https://github.com/carlosxfelipe/Mov2Gif"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Mov2Gif.app"
 
