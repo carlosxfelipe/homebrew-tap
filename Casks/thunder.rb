@@ -1,9 +1,9 @@
 cask "thunder" do
-  version "2.0.0"
-  sha256 "037b11769afc028d302ae87f7be7ea66e96ac977e0ecc9314ad5a5dba50787b6"
+  version "2.0.1,2.1-2"
+  sha256 "d6c7b72a9cf98bec14ee7742f64839c34f88b8cbfb296e6827e551c05dfdbf15"
 
-  # Tratamento dinâmico: o tag é v2.0.0, mas o DMG de release segue a versão do Xcode (2.0) com build (1).
-  url "https://github.com/carlosxfelipe/thunder/releases/download/v#{version}/Thunder-#{version.major_minor}-1.dmg"
+  # Tratamento dinâmico: o tag é v2.0.1, mas o DMG de release é 2.1-2.
+  url "https://github.com/carlosxfelipe/thunder/releases/download/v#{version.csv.first}/Thunder-#{version.csv.second}.dmg"
   name "Thunder"
   desc "File manager written in Swift with SwiftUI"
   homepage "https://github.com/carlosxfelipe/thunder"

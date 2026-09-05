@@ -10,3 +10,10 @@ File manager written in Swift with SwiftUI.
 ```bash
 brew install carlosxfelipe/tap/thunder
 ```
+
+### mov2gif 🎥
+Convert .mov files to .gif.
+
+```bash
+brew install carlosxfelipe/tap/mov2gif
+```
