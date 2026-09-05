@@ -12,7 +12,7 @@ cask "thunder" do
 
   app "Thunder.app"
 
-  postflight do
+  postflight_steps do
     system_command "/usr/bin/xattr",
                    args: ["-cr", "#{appdir}/Thunder.app"],
                    sudo: false

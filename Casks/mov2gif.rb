@@ -11,7 +11,7 @@ cask "mov2gif" do
 
   app "Mov2Gif.app"
 
-  postflight do
+  postflight_steps do
     # Removes the quarantine attribute so macOS doesn't block the unsigned/unnotarized app if not from App Store
     system_command "/usr/bin/xattr",
                    args: ["-cr", "#{appdir}/Mov2Gif.app"],
