@@ -12,7 +12,7 @@ cask "live-wallpaper" do
   postflight_steps do
     # Removes the quarantine attribute before moving to Applications
     run "/usr/bin/xattr",
-        args:         ["-cr", "#{staged_path}/LiveWallpaper.app"],
+        args:         ["-cr", "/Applications/LiveWallpaper.app"],
         must_succeed: false
   end
 end
