@@ -17,3 +17,10 @@ Convert .mov files to .gif.
 ```bash
 brew install carlosxfelipe/tap/mov2gif
 ```
+
+### LiveWallpaper 🌇
+Lightweight, native macOS menu bar app to set custom gradients and looping videos as your desktop wallpaper.
+
+```bash
+brew install carlosxfelipe/tap/live-wallpaper
+```
