@@ -1,8 +1,8 @@
 cask "live-wallpaper" do
-  version "1.0.1"
-  sha256 "f84798a7566071303545b7d48ba3dd60a969f2a40679444e74473c08622f71fe"
+  version "1.0.2"
+  sha256 "e9657f14039020df488dc2729afcc32f1f0116b7858432338321d4ecfd8767e7"
 
-  url "https://github.com/carlosxfelipe/live-wallpaper/releases/download/v#{version}/LiveWallpaper-#{version}-4.dmg"
+  url "https://github.com/carlosxfelipe/live-wallpaper/releases/download/v#{version}/LiveWallpaper-#{version}-5.dmg"
   name "LiveWallpaper"
   desc "Lightweight, native macOS menu bar app to set custom gradients and looping videos as your desktop wallpaper"
   homepage "https://github.com/carlosxfelipe/live-wallpaper"
