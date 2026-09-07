@@ -10,9 +10,9 @@ cask "live-wallpaper" do
   app "LiveWallpaper.app"
 
   postflight_steps do
-    # Removes the quarantine attribute so macOS doesn't block the unsigned/unnotarized app if not from App Store
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/LiveWallpaper.app"],
-                   sudo: false
+    # Removes the quarantine attribute before moving to Applications
+    run "/usr/bin/xattr",
+        args:         ["-cr", "#{staged_path}/LiveWallpaper.app"],
+        must_succeed: false
   end
 end
