@@ -1,8 +1,8 @@
 cask "mov2gif" do
-  version "1.0.0"
-  sha256 "13309a48f074a2c815e31bf0aa6b95b0132b4c68d229c414e413164fd3514899"
+  version "1.1.0"
+  sha256 "ed6c5f3da3fa81387bcabb89befcb2d63b9a0f323c66f311bf8cbd7ac6804833"
 
-  url "https://github.com/carlosxfelipe/Mov2Gif/releases/download/v#{version}/Mov2Gif-1.0-1.dmg"
+  url "https://github.com/carlosxfelipe/Mov2Gif/releases/download/v#{version}/Mov2Gif-1.1-2.dmg"
   name "Mov2Gif"
   desc "Native macOS application to convert .mov videos into .gif animated images"
   homepage "https://github.com/carlosxfelipe/Mov2Gif"
