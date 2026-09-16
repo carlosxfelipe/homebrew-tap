@@ -1,5 +1,5 @@
 cask "video-downloader" do
-  version "1.0.1"
+  version "1.0.0"
   sha256 "a41121a53294d33b5d5db032428b9e385bf9b0dae676eb7ce5617f132bc987b8"
 
   url "https://github.com/carlosxfelipe/video-downloader/releases/download/v#{version}/VideoDownloader-1.0-1.dmg"
