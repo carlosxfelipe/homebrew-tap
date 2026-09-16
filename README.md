@@ -24,3 +24,10 @@ Lightweight, native macOS menu bar app to set custom gradients and looping video
 ```bash
 brew install carlosxfelipe/tap/live-wallpaper
 ```
+
+### VideoDownloader 📥
+Native macOS GUI for yt-dlp to download videos and audio from YouTube and hundreds of other sites.
+
+```bash
+brew install carlosxfelipe/tap/video-downloader
+```
